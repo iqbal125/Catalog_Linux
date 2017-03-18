@@ -14,7 +14,7 @@ import httplib2
 import json
 
 
-engine = create_engine('sqlite:///catalog.db')
+engine = create_engine('postgresql:///catalog')
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
