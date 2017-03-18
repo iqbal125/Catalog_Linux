@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Item Catalog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel=stylesheet href="{{url_for('static', filename='style.css')}}">
+ </head>
+<body>
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-2"></div>
+   <div class="col-md-8">
+     <span class="titleD">Design a High-End CPU</span>
+     {% if user %}
+         <a href="/logout">Logout</a>
+     {% else %}
+       <a href="/login">Login</a>
+     {% endif %}
+     <br>
+     <br>
+     <br>
+     <ul class="NavBarD">
+       <li><a href="/">Home</a></li>
+       <li><a href="/category/new/">New Category</a></li>
+       <li><a href='/categories'>Cateogries</a></li>
+     </ul>
+     <div class="content">
+     {% block content %}
+     {% endblock %}
+     </div>
+    </div>
+   <div class="col-md-2"></div>
+  </div>
+ </div>
+</body>
+</html>

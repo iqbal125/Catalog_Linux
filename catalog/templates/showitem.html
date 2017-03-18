@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+{% block content %}
+{% for item in items %}
+  {{item.name}}
+  <br>
+  <button><a href="{{url_for('editItem', category_id=item.category_id, item_id=item.id)}}">Edit</a></button>
+  <button><a href="{{url_for('deleteItem', category_id=item.category_id, item_id=item.id)}}">Delete</a></button>
+  <br>
+  <br>
+{%endfor%}
+{%if item%}
+    <button><a href="{{url_for('newItem', category_id=item.category_id)}}">New Item</a></button>
+{%endif%}
+{% endblock %}
