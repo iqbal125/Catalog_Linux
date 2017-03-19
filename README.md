@@ -19,8 +19,6 @@ Dependencies:
 9. jinja2
 10. flask
 11. SQLalchemy
-12. Facebook API
-13. Google API
 
 <hr>
 
