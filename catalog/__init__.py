@@ -12,17 +12,21 @@ import string
 from oauth2client.client import flow_from_clientsecrets, FlowExchangeError
 import httplib2
 import json
+import psycopg2
 
 
-engine = create_engine('postgresql:///catalog')
+engine = create_engine('postgresql://catalog:catalog@localhost:5432/catalog')
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
+APP_PATH = '/var/www/Catalog_Linux/catalog/'
+CLIENT_ID = json.loads(open(APP_PATH + 'client_secrets.json', 'r').read())['web']['client_id']
+APPLICATION_NAME = "Catalog"
+
+
 app = Flask(__name__)
 
-CLIENT_ID = json.loads(open('client_secrets.json', 'r').read())['web']['client_id']
-APPLICATION_NAME = "Catalog"
 
 #Helper Functions
 def createUser(login_session):

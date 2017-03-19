@@ -1,11 +1,11 @@
-from flask import Flask, render_template, request, redirect, url_for, make_response, flash
+from flask import Flask, render_template, request, redirect, url_for, make_respone
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from database_setup import User, Category, Item
 
 
 
-engine = create_engine('postgresql:///catalog')
+engine = create_engine('postgresql://catalog:catalog@localhost:5432/catalog')
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
