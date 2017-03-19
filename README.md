@@ -56,7 +56,7 @@ vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 
 
 Resources
-<hr>
+<br>
 https://discussions.udacity.com/c/nd004-p7-linux-based-server-configuration
 http://stackoverflow.com/questions/28307431/python-ioerror-errno-2-no-such-file-or-directory-but-file-exists
 https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
