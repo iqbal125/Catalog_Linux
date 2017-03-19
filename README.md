@@ -1,26 +1,26 @@
 # Catalog_Linux
 This project uses a Linux Web Server to host a WSGI app. 
 
-Public IP Address: http://54.205.56.181
-URL: ec2-54.205.56.181.compute-1.amazonaws.com
-SSH port: 2200
+Public IP Address: http://54.205.56.181<br>
+URL: ec2-54.205.56.181.compute-1.amazonaws.com<br>
+SSH port: 2200<br>
 
 <hr>
 Dependencies:
 
-Apache2
-PostgreSQL
-libapache2-mod-wsgi
-git 
-pip
-psycopg2
-requests
-http2lib
-jinja2
-flask
-SQLalchemy
-Facebook API
-Google API
+1. Apache2
+2. PostgreSQL
+3. libapache2-mod-wsgi
+4. git 
+5. pip
+6. psycopg2
+7. requests
+8. http2lib
+9. jinja2
+10. flask
+11. SQLalchemy
+12. Facebook API
+13. Google API
 
 <hr>
 
