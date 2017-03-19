@@ -5,7 +5,7 @@ from database_setup import User, Category, Item
 
 
 
-engine = create_engine('sqlite:///catalog.db')
+engine = create_engine('postgresql://catalog:catalog@localhost:5432/catalog')
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
